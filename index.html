@@ -8,12 +8,6 @@
     <title>Tea House</title>
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Josefin+Sans&family=Lora&family=Manrope:wght@600&family=Nunito:wght@500&family=Open+Sans&family=Oswald&family=Poppins:wght@500&family=Work+Sans:wght@500&display=swap"
-        rel="stylesheet">
     <!-- icons -->
     <script src="https://kit.fontawesome.com/05e1db3a4f.js" crossorigin="anonymous"></script>
 
@@ -31,8 +25,14 @@
                 <button class="text-white bg-gradient-to-l from-[#FF0000] to-[#FF8938] px-5 py-4 rounded-lg">Explore
                     More <img class="inline" src="images/arrow.png" alt=""></button>
             </div>
-            <div>
+            <div class="relative">
                 <img src="images/banner.png" alt="">
+                <div class="flex items-center gap-2 rounded-lg bg-white p-2 absolute bottom-1 left-10 shadow-lg">
+
+                    <p class="text-4xl text-yellow-400"><i class="fa-sharp fa-solid fa-star"></i>
+                    </p>
+                    <p class="font-light"> <span class="text-2xl font-bold">5.00</span><br>Trust pilot rating</p>
+                </div>
             </div>
         </div>
     </header>
@@ -184,15 +184,12 @@
     <!-- main end -->
     <footer class="h-[100vh] lg:h-[90vh] bg-[#FFEAE8]">
         <div class="w-full max-w-[1000px] mx-auto pt-10 px-4 lg:px-0">
-            <div class="flex items-center gap-4">
-                <div class="grow">
+            <div class="flex justify-between items-center ">
+                <div>
                     <img src="images/cup.png" alt="">
                 </div>
-                <div>
+                <div class="flex flex-col lg:flex-row  items-center gap-4">
                     <p> Ready to get strated?</p>
-
-                </div>
-                <div>
                     <button class="text-white bg-gradient-to-l from-[#FF0000] to-[#FF8938] px-5 py-4 rounded-lg">Get
                         started</button>
                 </div>
@@ -220,9 +217,10 @@
                 </div>
                 <div>
                     <p class="font-bold">Subscribe to our newlatter</p>
-                    <input class="p-2  bg-transparent border-b border-black outline-transparent
+                    <input class="w-32 lg:w-fit p-2  bg-transparent border-b border-black outline-transparent
                     my-1 lg:my-8" type="email" placeholder="Email address">
-                    <button class="text-white bg-gradient-to-l from-[#FF0000] to-[#FF8938] py-2 px-6 lg:px-3 my-2 lg:my-0 rounded-full "><i
+                    <button
+                        class="text-white bg-gradient-to-l from-[#FF0000] to-[#FF8938] py-2 px-6 lg:px-3 my-2 lg:my-0 rounded-full "><i
                             class="fa-solid fa-angle-right"></i></button>
                     <p>
                         <i class="fa-brands fa-facebook-f"></i>
